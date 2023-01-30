@@ -1,10 +1,5 @@
 // Require the framework and instantiate it
 
-// ESM
-import Fastify from 'fastify'
-const fastify = Fastify({
-  logger: true
-})
 // CommonJs
 const fastify = require('fastify')({
   logger: true
@@ -12,7 +7,7 @@ const fastify = require('fastify')({
 
 // Declare a route
 fastify.get('/', function (request, reply) {
-  reply.send({ hello: 'world' })
+  reply.send({ Hello: 'Cloudtype' })
 })
 
 // Run the server!
